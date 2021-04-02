@@ -1,133 +1,522 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A blog page on fashion and personal style">
+<meta name="keywords" content="fashion, blog, fashion blog">
+<meta name="author" content="Motolani Osinowo">
+<title> about</title>
 </head>
+<script src="https://unpkg.com/feather-icons"></script>
+
+<script src="https://kit.fontawesome.com/6ac5c36b23.js"></script>
+
+<style type="text/css">
+
+
+
+/*----- END VARIABLES: you don't need to edit the css after here -----*/
+
+
+body {
+    font-family:'Public Sans', sans-serif;
+    font-size: 14px;
+    color: #575757;
+    background-color: #f0f0f0;
+    text-align: left;
+    line-height: 160%;
+    word-wrap: break-word;
+    letter-spacing: 0.2px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+   
+}
+
+a {
+    color: #8c8c8c;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color: #9fa8da;
+    
+}
+
+@media screen and (max-width:500px) {
+        .header a {
+            float:none;
+            display:block;
+            text-align:center;
+        }
+
+    }
+    .header {
+        float:center;
+        text-align: center;
+        padding:12px;
+        text-decoration:none;
+        font-size: 14px;
+        line-height:25px;
+        border-radius: 4px;
+    }
+
+p a {border-bottom: 2px solid #9fa8da;}
+
+blockquote {
+    padding: 0 0 0 1.25em;
+    border-left: 1px solid #e0e0e0;
+    margin: 1.25em 0 1.25em 1.25em;
+}
+
+h1, h2, h3, h4, h5, .title {
+    color: #212121;
+    letter-spacing: 2px;
+    line-height: 160%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, .title a {color: #212121;}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, .title a:hover {color: #9fa8da;}
+h1, .title {font-size: 1.3em;}
+h2 {font-size: 1.25em;}
+h3 {font-size: 1.15em;}
+h4 {font-size: 1.1em;}
+h5 {font-size: 1em;}
+
+#itsmotorola {text-align:center ;}
+
+
+small {font-size: 0.9em;}
+big {font-size: 1.1em;}
+b, bold, strong {color: #212121;}
+b a, bold a, strong a {color: #212121;}
+b a:hover, bold a:hover, strong a:hover {color: #9fa8da;}
+
+
+
+/*----- COMMON -----*/
+
+.icon, #social-media img, #about-header img {
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #f5f6ff;
+}
+
+.icon-gradient {
+    background: linear-gradient(to bottom right, #7986cb, #e1bee7);
+    border-radius: 50%;
+    padding: 3px;
+    display: inline-block;
+}
+
+.ui-icon {
+    position: absolute; 
+    background-color: #9fa8da;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.ui-icon .feather {color: #fff;}
+
+a .feather {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+a:hover .feather {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.upper {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #212121;
+    margin-bottom: 1em;
+    font-size: 1.15em;
+}
+
+article .feather {
+    width: 1.25em;
+    height: 1.25em;
+    color: #9fa8da;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*----- CONTENT -----*/
+
+#container {
+    position: relative;
+    width: calc(99vw - 250px);
+    margin-left: 150px;
+}
+
+#content-wrap {
+    width: 700px; 
+    margin: 50px auto;
+    position: relative;
+}
+
+article {
+    background-color: #fff;
+    position: relative;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #e0e0e0,
+                -1px 1px 3px #e0e0e0;;
+}
+
+/*----- GENERAL CONTENT -----*/
+
+#social-media img, #about-header img {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+article .title {
+    display: inline-block;
+    font-size: 1.25em;
+    margin-left: 1em;
+}
+
+.main-flex {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.stats {width: 240px;}
+.stats li {list-style-type: none; margin-bottom: 0.5em;}
+.stats li:last-of-type {margin-bottom: 0;}
+
+.stats span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #9fa8da;
+    font-size: 0.9em;
+    margin-right: 0.5em;
+    background-color: #f5f5f5;
+    padding: 0.25em 0.5em;
+    border-radius: 1em;
+}
+
+.summary {width: 450px; margin-left: 9px;}
+.summary p:first-of-type {margin-top: 0;}
+.summary p:last-of-type {margin-bottom: 0;}
+
+/*----- QUOTE -----*/
+
+#quote {
+    margin-top: 10px; 
+    text-align: center;
+    display: block;
+}
+
+#quote b {font-size: 1.25em;}
+#quote .upper {color: var(--links); margin-top: 1.5em;}
+
+#quote b::before, #quote b::after {
+    content: '❝';
+    color: #9fa8da;
+    font-size: 1.5em;
+    display: inline-block;
+    position: absolute;
+}
+
+#quote b::before {margin-left: -0.75em;}
+
+#quote b::after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transition: rotate(180deg);
+    -o-transition: rotate(180deg);
+    transform: rotate(180deg);
+    margin: -0.35em auto auto 0.25em;
+}
+
+/*----- BOTTOM BOXES -----*/
+
+.flexing {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.flex-left, .flex-right {width: 345px;}
+.flex-right {margin-left: 10px;}
+.flexing article {margin: 10px 0;}
+
+/*----- SOCIAL MEDIA -----*/
+
+#social-media {display: block;}
+
+#social-wrap a {
+    font-size: 1.75em;
+    color: var(--accent);
+    list-style-type: none; 
+    display: inline-block;
+    margin: auto 0.75em 0.75em auto;
+}
+
+#social-wrap a:hover {color: #212121;}
+
+
+/*----- SKILLS -----*/
+
+#skills {display: block;}
+
+.skill-bar {
+    width: 100%;
+    height: 15px;
+    background-color:#f5f5f5;
+    margin-top: 0.5em;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+#skills li {list-style-type: none; margin-top: 1.5em;}
+#skills li:first-of-type {margin-top: 0;}
+
+.skill-bar div {
+    background: linear-gradient(to right, #7986cb, #e1bee7);
+    height: 7px;
+    border-radius: 10px;
+}
+
+#progress-one {width: var(--skill-one-progress);}
+#progress-two {width: var(--skill-two-progress);}
+#progress-three {width: var(--skill-three-progress);}
+
+</style>
+
 <body>
 
-
-    <div>
-        <h1>
+<div>
+        <h1 id="itsmotorola">
             <a href="index.html">itsmotorola</a>
         </h1>
     </div>
-        <div class="header">
-          <a href="index.html" class="logo">
-            <img src="images/tolani1.JPG" alt="photo of Motolani" height=50/>
-          </a>
-            <div class="header-center">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="subscribe.html">Subscribe</a>
-                <a href="sitemap.html">Sitemap</a>
-            </div>
+
+<div>
+    <div class="header">
+      
+        <div class="header-center">
+            <a href="index.html"> Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="subscribe.html">Subscribe</a>
+            <a href="sitemap.html">Sitemap</a>
+            <a href="credits.html">Credits</a>
+        </div>
+    </div>
 
 
-    <fieldset id="about-header">
+
+<section id="container">
+    
+    
+    
+    <div id="content-wrap">
+    
+       
+
+        <article id="about-header">
         
-        <div class="icon-gradient">
-            <img src="images/tolani bio.jpeg" width="100"/>
+            
+        
+            <div class="icon-gradient">
+                <img src="images/tolani1.JPG"/>
+            </div>
+           
+             <div class="title">Tolani Osinowo</div>
+             
+        </article>
+        
+        
+            
+        <div class="main-flex">
+           
+            
+            <article class="stats">
+                
+                <div class="subtitle">details</div>
+                
+                
+                
+                <li>
+                    <span>Age</span>
+                    21
+                </li>
+                    
+                <li>
+                    <span>Nationality</span>
+                    Nigerian-American
+                </li>
+                    
+                <li>
+                    <span>Interests</span>
+                    Fashion, Travel, Lifestyle
+                </li>
+                    
+                <li>
+                    <span>Skills</span>
+                    Fashion Photography, Fashion Styling, Graphic Design
+                </li>
+                    
+            </article>
+            
+           
+                
+            <article class="summary">
+                
+                <div class="subtitle">about me</div>
+                    
+                <p>
+                    <i>Content Creator — Social Media Influencer</i>
+                </p>
+                    
+                <p>
+                    Hi! I'm a social media influencer and content creator passionate about sustainable fashion, and lifestyle. I spending time creating outfits and promoting affordable fashion. My overall goal is to help women feel confident in their own skin and achieve a stylish wardrobe without breaking the bank.                </p>
+                
+            </article>
+            
+           
+            
+        </div>
+            
+       
+            
+        <article id="quote">
+            
+            <b>Believe in yourself, you're going to do great things.</b>
+                
+            <div class="upper">WE THE URBAN</div>
+                
+        </article>
+        
+        
+            
+        <div class="flexing">
+            
+            <div class="flex-left">
+            
+                
+                    
+                <article id="social-media">
+                        
+                    <div class="subtitle">Connect</div>
+                    
+                    <div id="social-wrap">
+                    
+                        <a href="https://www.instagram.com/moto.rola" title="@instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        
+                        <a href="https://www.tiktok.com/itsmotorola" title="@tiktok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        
+                        <a href="https://www.pinterest.ch/mosinowo/" title="@pinterest">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    
+                    </div>
+                </article>
+        
+                
+                <article id="skills">
+                    
+                    <div class="subtitle">skills</div>
+                    
+                    <li>
+                        <div class="upper">Fashion Photography</div>
+                        <div class="skill-bar">
+                            <div style="width: 45%;"></div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="upper">Fashion Styling</div>
+                        <div class="skill-bar">
+                            <div style="width: 85%;"></div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="upper">Graphic Design</div>
+                        <div class="skill-bar">
+                            <div style="width: 75%;"></div>
+                        </div>
+                    </li>
+                    
+                </article>
+                
+            </div>
+                
+            <div class="flex-right">
+            
+                
+            
+                <article id="favourites">
+                
+                    <div class="subtitle">favourite photos</div>
+                    
+                    <div class="upper">
+                        <img src="images/outfit shot.jpg" width=100>
+                    </div>
+                    
+                    <div class="upper">
+                        <img src="images/skii shot.jpg" width=100>
+                    </div>
+                    
+                    <div class="upper">
+                        <img src="images/sneaker shot.jpg" width=100>
+                    </div>
+                
+                </article>
+               
+                
+            </div>
+            
+            
+                
         </div>
         
-         <div class="title"><i>Tolani Osinowo</i></div>
-         
-    </fieldset>
-    <fieldset class="stats">
-                
-        <div class="subtitle"><b>Details</b></div>
-        
-        <li>
-            <span>Age:</span>
-            21
-        </li>
-            
-        <li>
-            <span>Nationality:</span>
-            Nigerian-American
-        </li>
-            
-        <li>
-            <span>Interests:</span>
-            Fashion, Travel, lifestyle
-        </li>
-            
-        <li>
-            <span>Skills:</span>
-            Enter skills here
-        </li>
-            
-    </fieldset>
-
-    <fieldset class="summary">
-                
-        <div class="subtitle"><b>About Me</b></div>
-            
-        <p>
-            <i> Content Creator — Social Media Influencer</i>
-         </p>
-            
-        <p>
-            Hi! I'm a social media influencer and content creator passionate about sustainable fashion, and lifestyle.
-            I spending time creating outfits and promoting affordable fashion.
-            My overall goal is to help women feel confident in their own skin and achieve a stylish wardrobe without breaking the bank.
-        </p>
-        
-    </fieldset>
-</div>
-<fieldset id="quote">
-            
-   <i><b>"Believe in yourself, you're going to do great things.</b></i> 
-        
-    <div class="upper">- WE THE URBAN</div>
-        
-</fieldset>
-
-          
-        <fieldset id="social-media">
-                
-            <div class="subtitle"><b>Connect</b></div>
-            
-            <div id="social-wrap">
-            
-                <li>
-                <a href="https://wwww.instagram.com/moto.rola">@instagram</a>
-                    <i class="instagram"></i>
-                </a>
-                </li>
-
-                <li>
-                <a href="https://wwww.pinterest.ch/mosinowo/">@pinterest</a> 
-                    <i class="pinterest"></i>
-                </a>
-                </li>
-
-            </div>
-            </fieldset>
-
-
- <fieldset id="skills">
-                    
-                <div class="subtitle">Skills</div>
-                
-                <li>
-                    <div class="upper">Fashion Styling</div>
-                    <div class="skill-bar"></div>
-                </li>
-                
-                <li>
-                    <div class="upper">Fashion Photography</div>
-                    <div class="skill-bar"></div>
-                </li>
-                
-            </fieldset>
-    </body>
-
-    <br>
-    <a href="sitemap.html">Sitemap</a>
-
+    </div>
+    
+   
+    
+</section>
+   
+    
+</section>
 </body>
 </html>
