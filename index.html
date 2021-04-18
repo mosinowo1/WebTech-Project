@@ -132,6 +132,18 @@ article img {
     vertical-align: middle;
 }
 
+#essentials {
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+#zebra {
+    width: 350px;
+    height: 400px;
+    border-radius: 8px;
+}
+
 article .ui-icon {
     width: 16px;
     height: 16px;
@@ -173,6 +185,57 @@ article li:last-of-type::after {display: none;}
 
 article ul {margin: 0; padding: 0; display: inline-block;}
 
+.lirb {vertical-align: middle; text-align: right;}
+
+.lirb a {
+    margin-left: 0.75em; 
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    padding: 0.5em;
+    line-height: 1em;
+    background-color: #fff;
+}
+
+.lirb a .feather {
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    color:  #9fa8da;
+}
+
+.lirb a:hover {
+    background-color: #9fa8da;
+    color: #212121;
+    box-shadow: 1px 1px 3px #e0e0e0,
+                -1px 1px 3px #e0e0e0;;
+}
+
+.lirb a:hover .feather {color:#212121;}
+
+.like-b {
+    position: relative;
+    display: inline-block;
+    height: 1em;
+    margin-bottom: -1px;
+    cursor: pointer;
+}
+ 
+.like-b .like_button iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   z-index: 2;
+   opacity: 0.000001;
+}
+
+.like_button iframe {width: 100% !important; height: 100% !important;}
+.like-b .liked + .b {color: #d32f2f;}
+.like-b .liked + .b .feather {fill: #d32f2f; color: #d32f2f;}
+
 </style>
 
 
@@ -211,7 +274,8 @@ article ul {margin: 0; padding: 0; display: inline-block;}
         <div class="title">Welcome!</div>
         
         <div class="links">
-            <p> Whether your 18 or 35, my goal is to help you learn more about fashion, and help you create your personal style. If this sounds like something you are interested in, subscribe to be the first to access all new content and resources!</p>
+            <p> Whether your 18 or 35, my goal is to help you learn more about fashion, and help you create your personal style. 
+                If this sounds like something you are interested in, <a href="subscribe.html">subscribe</a> to be the first to access all new content and resources!</p>
         </div>
     </article>
 
@@ -244,7 +308,64 @@ article ul {margin: 0; padding: 0; display: inline-block;}
         </div>
         
     </article>
-    
+
+    <article>
+        <div class="icon-gradient">
+            <img src="images/tolani1.JPG"/>
+        </div>
+        
+        
+        <div class="title">Essentials</div>
+        
+        <div class="links">
+            <img src="images/essentials.JPG" id="essentials"/>
+            <p> Everyone has their own essentials! mine include 
+                always my handy card holder and a pair of sunglasses. What are your essentials?</p>
+        </div>
+        <span class="lirb">
+            <a class="like-b" href="#" title="like"><span class="b"><svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span></a>
+        </span>
+    </article>
+
+    <article>
+        <div class="icon-gradient">
+            <img src="images/tolani1.JPG"/>
+        </div>
+        
+        
+        <div class="title">🦓</div>
+        
+        <div class="links">
+            <img src="images/zebra-4.JPG" id="zebra"/>
+            <p> Shop the detailed look!</p>
+
+            <li><a href="https://www.instagram.com/topshop">Dress</a></li>
+            <li><a href="https://www.instagram.com/telfarglobal">Bag</a></li>
+            <li><a href="https://www.instagram.com/giantvintage">Sunglasses</a></li>
+        </div>
+        <span class="lirb">
+            <a class="like-b" href="#" title="like"><span class="b"><svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span></a>
+        </span>
+    </article>
+
+    <article>
+        <div class="icon-gradient">
+            <img src="images/tolani1.JPG"/>
+        </div>
+        
+        
+        <div class="title">J as in Jaquemus</div>
+        
+        <div class="links">
+            <img src="images/jaquemus.jpg" id="essentials"/>
+            <p> This has easily become one of my favorite bags to wear! not only is it the right size, but it is suprisingly versatile. 
+                I've styled it down for a more casual look, but also dressed it up for a more formal look too. 
+                Jacquemus is a sustainable luxury brand from France, this bag comes many different colors, sizes and shapes. Shop the bag <a href="www.jacquemus.com">here!</a> </p>
+        </div>
+        <span class="lirb">
+            <a class="like-b" href="#" title="like"><span class="b"><svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span></a>
+        </span>
+    </article>
 </section>
 
 
