@@ -183,9 +183,9 @@ article .title {
     </div>
     
     
-    <div class="title">Get in touch</div>
+    <div class="title" id="title">Get in touch</div>
     
-    <form>
+    <form name="myForm" id="myForm">
         <fieldset>
             <legend>Your Information:</legend>
             <div>
@@ -235,15 +235,55 @@ article .title {
     </form>
 
     <div>
-        <button type="submit" name="submit-button">
+        <button type="submit" name="submit-button" id="submit">
             <label for="submit">Submit</label>
         </button>
-        <button type="reset" name="reset-button">
+        <button type="reset" name="reset-button" value="clear">
             <label for="reset">Reset</label>
         </button>
     </div>
 </fieldset>
 
 </article>
+
+<script>
+    function displayInput() {
+      console.log("testing...");
+      const myForm = document.getElementById("myForm");
+      const fname = myForm["firstname"].value;
+      const lname = myForm["lastname"].value;
+      const email = myForm["email"].value;
+      const comments = myForm["comments"].value;
+// this function used to make sure inputs are done correctly, and are in the correct boxes otherwise prompt message is shown
+      if (fname == "") {
+          alert("Please enter your first name");
+          return false;
+      }
+    
+      else if (lname== "") {
+          alert("Please enter your last name");
+      }
+      else if (email== "") {
+          alert("Please enter your email");
+      }
+      else if (comments== "") {
+          alert("Please leave a comment");
+      }
+    }
+
+    document.getElementById("submit").onclick = displayInput;
+
+function change_text() {
+    document.getElementById("title").innerHTML= "Thanks for reaching out! I'll be in touch shortly.";
+    document.getElementById("title").style.color= "#7986cb";
+}
+document.getElementById("submit").onclick= change_text
+
+    
+  </script>
+
+
+
+
 </body>
 </html>
