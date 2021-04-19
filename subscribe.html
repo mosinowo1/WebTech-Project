@@ -182,11 +182,11 @@ article .title {
         <img src="images/tolani1.JPG"/>
     </div>
     
-    <h1>
+    <h1 id="h1">
         Subscribe for Updates
     </h1>
     <div class="fieldset"></div>
-    <form>
+    <form id="myForm">
         <fieldset>
             <legend>Your Information:</legend>
             <div>
@@ -226,15 +226,48 @@ article .title {
         <label for="subscribe">Sign me up for email updates</label>
     </div>
     <div>
-    <button type="submit" name="submit-button">
+    <button type="submit" name="submit-button" id="submit">
         <label for="submit">Submit</label>
     </button>
-    <button type="reset" name="reset-button">
+    <button type="reset" name="reset-button" value="clear">
         <label for="reset">Reset</label>
     </button>
 </div>
 </article>
 
+<script>
+    function displayInput() {
+      console.log("testing...");
+      const myForm = document.getElementById("myForm");
+      const fname = myForm["firstname"].value;
+      const lname = myForm["lastname"].value;
+      const email = myForm["email"].value;
+// this function used to make sure inputs are done correctly, and are in the correct boxes otherwise prompt message is shown
+      if (fname == "") {
+          alert("Please enter your first name");
+          return false;
+      }
+    
+      else if (lname== "") {
+          alert("Please enter your last name");
+      }
+      else if (email== "") {
+          alert("Please enter your email");
+      }
+    }
 
+    document.getElementById("submit").onclick = displayInput;
+
+
+    function change_text() {
+    document.getElementById("h1").innerHTML= "Thanks for subscribing!";
+    document.getElementById("h1").style.color= "#7986cb";
+}
+document.getElementById("submit").onclick= change_text; "#7986cb";
+
+
+
+    
+  </script>
 </body>
 </html>
