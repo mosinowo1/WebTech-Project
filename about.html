@@ -488,15 +488,15 @@ article .title {
                     <div class="subtitle">favourite photos</div>
                     
                     <div class="upper">
-                        <img src="images/outfit shot.jpg" width=100>
+                        <img src="images/outfit shot.jpg" width=100 id="outfitshot">
                     </div>
                     
                     <div class="upper">
-                        <img src="images/skii shot.jpg" width=100>
+                        <img src="images/skiishot.jpg" width=100 id="skii">
                     </div>
                     
                     <div class="upper">
-                        <img src="images/sneaker shot.jpg" width=100>
+                        <img src="images/sneaker shot.jpg" width=100 id="sneaker">
                     </div>
                 
                 </article>
@@ -516,5 +516,118 @@ article .title {
    
     
 </section>
+
+//image 1
+<script>
+    function enlargeImage() {
+        console.log("Testing...");
+   
+
+    let outfitImage = document.getElementById("outfitshot");
+    //console.log(tigerImage.width)
+    
+    let w = outfitImage.width;
+
+    w = w * 1.5;
+    outfitImage.width = w;
+    //console.log(tigerImage.width)
+
+    }
+
+    document.getElementById("outfitshot").onmouseover = function () {
+        enlargeImage();
+    };
+    
+    function resizeImage() {
+        console.log("Testing2...");
+
+
+        let outfitImage = document.getElementById("outfitshot"); 
+
+        let w = outfitImage.width;
+
+    w = w / 1.5;
+    outfitImage.width = w;
+    //console.log(tigerImage.width)
+    }
+    document.getElementById("outfitshot").onmouseout = function () {
+        resizeImage();
+    };
+    </script>
+
+    //image 2
+    <script>
+        function enlargeImage2() {
+            console.log("Testing...");
+       
+    
+        let skiiImage = document.getElementById("skii");
+        //console.log(tigerImage.width)
+        
+        let w = skiiImage.width;
+    
+        w = w * 1.5;
+        skiiImage.width = w;
+        //console.log(tigerImage.width)
+    
+        }
+    
+        document.getElementById("skii").onmouseover = function () {
+            enlargeImage2();
+        };
+        
+        function resizeImage2() {
+            console.log("Testing2...");
+    
+    
+            let skiiImage = document.getElementById("skii"); 
+    
+            let w = skiiImage.width;
+    
+        w = w / 1.5;
+        skiiImage.width = w;
+        //console.log(tigerImage.width)
+        }
+        document.getElementById("skii").onmouseout = function () {
+            resizeImage2();
+        };
+        </script>
+        //image 3
+        <script>
+            function enlargeImage3() {
+                console.log("Testing...");
+           
+        
+            let sneakerImage = document.getElementById("sneaker");
+            //console.log(tigerImage.width)
+            
+            let w = sneakerImage.width;
+        
+            w = w * 1.5;
+            sneakerImage.width = w;
+            //console.log(tigerImage.width)
+        
+            }
+        
+            document.getElementById("sneaker").onmouseover = function () {
+                enlargeImage3();
+            };
+            
+            function resizeImage3() {
+                console.log("Testing2...");
+        
+        
+                let sneakerImage = document.getElementById("sneaker"); 
+        
+                let w = sneakerImage.width;
+        
+            w = w / 1.5;
+            sneakerImage.width = w;
+            //console.log(tigerImage.width)
+            }
+            document.getElementById("sneaker").onmouseout = function () {
+                resizeImage3();
+            };
+            </script>
 </body>
 </html>
